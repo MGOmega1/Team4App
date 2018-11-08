@@ -4,11 +4,15 @@
              xmlns:local="clr-namespace:TeamApp1"
              x:Class="TeamApp1.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout BackgroundColor="#EDEDED" Margin="20">
+       
+    	<Label Text="Company Name"/>
+        <StackLayout BackgroundColor="DimGray">
+            <Button>
+                
+            </Button>
+            
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
