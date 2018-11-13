@@ -4,6 +4,7 @@
              x:Class="TeamApp1.SchedulePage"
              Title="Work Schedule">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout BackgroundColor="LightGray" Spacing="40">
             <StackLayout BackgroundColor="#74A4DD">
                 <Label
@@ -21,16 +22,40 @@
                     HorizontalTextAlignment="Start"
                     FontSize="20"
                 />
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                </Grid>
+
+                <ListView x:Name="scheduleListView" ItemSelected="scheduleListView_ItemSelected" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid BackgroundColor="#DDDDD">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="#74A4DD" CornerRadius="60" Margin="10" >
+                                        <Label Text="{Binding weekDay}"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="Center"
+                                               HorizontalOptions="CenterAndExpand"
+                                        />
+                                    </Frame>
+                                    <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#74A4DD" CornerRadius="40" Margin="10">
+                                        <Label Text="{Binding workShift}"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="Center"
+                                               HorizontalOptions="CenterAndExpand"
+                                        />
+                                    </Frame>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackLayout>
         </StackLayout>
+     </ScrollView>
     </ContentPage.Content>
 </ContentPage>
