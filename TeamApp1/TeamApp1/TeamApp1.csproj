@@ -9,10 +9,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="PastHoursPage.xaml.cs">
+      <DependentUpon>PastHoursPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="AgendaPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="HoursPage.xaml">
+    <EmbeddedResource Update="PastHoursPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="NewsPage.xaml">
