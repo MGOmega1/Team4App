@@ -29,10 +29,11 @@ namespace TeamApp1
             { Days = "Thursday: ", Hours = 8 });
             this.Hours.Add(new Hour
             { Days = "Friday: ", Hours = 8 });
-            this.Hours.Add(new Hour
-            { Days = "Hours worked last week: ", Hours = 40 });
 
             hoursListView.ItemsSource = this.Hours;
+
+            decimal Total = this.Hours.Sum(x => x.Hours);
+            totalHours.Text = Total.ToString();
         }
 
 
@@ -41,6 +42,11 @@ namespace TeamApp1
 
             public decimal Hours { get; set; }
             public string Days { get; set; }
+        }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Success!", "Thank you for approving your time", "Ok");
         }
     }
 }
