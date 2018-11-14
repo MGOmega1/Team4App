@@ -5,7 +5,7 @@
              Title="Hours Worked">
     <ContentPage.Content>
 
-        <StackLayout BackgroundColor="LightGray" Spacing="40">
+        <StackLayout BackgroundColor="LightGray" Spacing="10">
 
             <StackLayout BackgroundColor="#74A4DD">
                 <Label Text="App Name"
@@ -21,8 +21,10 @@
                 <Label Text="Hours Worked:"
                        FontSize="30"
                        HorizontalTextAlignment="Center"
-                       WidthRequest="400"
-                       HeightRequest="500"/>
+                       VerticalTextAlignment="Center"
+                       WidthRequest="300"
+                       HeightRequest="70
+                       "/>
             </StackLayout>
 
             <ListView x:Name="hoursListView"
@@ -46,6 +48,23 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Label x:Name="totalHours"
+                   WidthRequest="300"
+                   Style="Bold"
+                   Text="Total"
+                   HeightRequest="50"
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="Center"/>
+
+            <Button Text="Approve Hours"
+                       FontSize="24"
+                    BackgroundColor="#284669"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"
+                       WidthRequest="300"
+                       HeightRequest="50 "
+                       Clicked="Button_OnClicked"/>
+
         </StackLayout>
 
     </ContentPage.Content>
