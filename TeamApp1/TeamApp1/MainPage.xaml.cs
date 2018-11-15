@@ -13,5 +13,25 @@ namespace TeamApp1
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void MeetingsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AgendaPage());
+        }
+
+        private void ScheduleButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SchedulePage());
+        }
+
+        private void NewsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NewsPage());
+        }
+
+        private void HoursButton_Clicked(object sender, EventArgs e)
+        {
+          //  Navigation.PushAsync(new SubmitHoursPage());
+        }
+    }
 }

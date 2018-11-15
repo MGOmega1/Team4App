@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TeamApp1.ScheduleDetailPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightGray" Padding="20" Spacing="10">
+            
+            <Label x:Name="weekdayLabel"/>
+            <Label x:Name="workshiftLabel"/>
+            <Label x:Name="workDetailLabel"/>
+            <Label x:Name="workCompletionLabel"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

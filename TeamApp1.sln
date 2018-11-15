@@ -9,7 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamApp1.iOS", "TeamApp1\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamApp1.UWP", "TeamApp1\TeamApp1.UWP\TeamApp1.UWP.csproj", "{5C97F71E-B436-4A14-BAF4-1BA26BE5BF38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamApp1", "TeamApp1\TeamApp1\TeamApp1.csproj", "{98AD9103-F7F9-4F04-B5E2-F641D91F55A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamApp1", "TeamApp1\TeamApp1\TeamApp1.csproj", "{98AD9103-F7F9-4F04-B5E2-F641D91F55A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0B093C71-E4BC-4C0B-A0EA-A2F9426AE983}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

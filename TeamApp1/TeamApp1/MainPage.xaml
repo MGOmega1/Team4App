@@ -5,9 +5,41 @@
              x:Class="TeamApp1.MainPage">
 
     <ScrollView>
-        <StackLayout BackgroundColor="#EDEDED" Margin="20">
-            <Label Text="Company Name"/>
-            <StackLayout BackgroundColor="DimGray" Orientation="Horizontal">
+        <StackLayout BackgroundColor="#EDEDED" Spacing="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                </Grid.ColumnDefinitions>
+                <Image
+                    x:Name="cellphoneicon"
+                    Source="cellphoneicon.png"
+                    BackgroundColor="#284669"
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    />
+                <Label Text="Company Name"
+                   TextColor="#284669"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="22"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="3"
+                   />
+                
+            </Grid>
+            
+            <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
                 <Image x:Name="meetingsicon"
                        Source="meetingsicon.png"
                        WidthRequest="50"
@@ -15,13 +47,15 @@
                        BackgroundColor="DimGray"
                    />
                 <Button
-                Text="Meetings and Events"
+                Text="Meetings/Events"
                 BackgroundColor="DimGray"
                 TextColor="White"
-                FontSize="22"                
+                FontSize="22"
+                    x:Name="MeetingsButton"
+                    Clicked="MeetingsButton_Clicked"                  
                 />
             </StackLayout>
-            <StackLayout BackgroundColor="DimGray" Orientation="Horizontal">
+            <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
                 <Image x:Name="peopleicon"
                        Source="peopleicon.png"
                        WidthRequest="50"
@@ -29,13 +63,15 @@
                        BackgroundColor="DimGray"
                    />
                 <Button
-                Text="Schedule and Who's Working"
+                Text="Schedule"
                 BackgroundColor="DimGray"
                 TextColor="White"
-                FontSize="22"                
+                FontSize="22"
+                    x:Name="ScheduleButton"
+                    Clicked="ScheduleButton_Clicked"
                 />
             </StackLayout>
-            <StackLayout BackgroundColor="DimGray" Orientation="Horizontal">
+            <StackLayout Margin="20" Padding ="10" BackgroundColor="DimGray" Orientation="Horizontal">
                 <Image x:Name="newsicon"
                        Source="newsicon.png"
                        WidthRequest="50"
@@ -46,12 +82,14 @@
                 Text="Breaking News"
                 BackgroundColor="DimGray"
                 TextColor="White"
-                FontSize="22"                
+                FontSize="22"
+                    x:Name="NewsButton"
+                    Clicked="NewsButton_Clicked"
                 />
             </StackLayout>
-            <StackLayout BackgroundColor="DimGray" Orientation="Horizontal">
-                <Image x:Name="paystubsicon"
-                       Source="paystubsicon.png"
+            <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
+                <Image x:Name="hoursicon"
+                       Source="hoursicon.gif"
                        WidthRequest="50"
                        HeightRequest="50"
                        BackgroundColor="DimGray"
@@ -60,7 +98,9 @@
                 Text="Hours"
                 BackgroundColor="DimGray"
                 TextColor="White"
-                FontSize="22"                
+                FontSize="22"
+                    x:Name="HoursButton"
+                    Clicked="HoursButton_Clicked"
                 />
             </StackLayout>
         </StackLayout>
