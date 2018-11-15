@@ -14,13 +14,54 @@
                     VerticalOptions="CenterAndExpand"/>
                 </StackLayout>
             
-            <StackLayout BackgroundColor="Gray">
+            <StackLayout BackgroundColor="Gray"
+                         Spacing="-475"
+                         Padding="30"
+                         Margin="10,45,10,0">
                 
-                <Label Text="Upcoming Events :"
+                <Label Text="Agenda"
                        FontSize="30"
                        HorizontalTextAlignment="Center"
                        WidthRequest="400"
-                       HeightRequest="500"/>
+                       HeightRequest="550"
+                       TextColor="White"/>
+                    
+                
+                    <ListView x:Name="AgendaListView"
+                              HasUnevenRows="true"
+                              ItemSelected="AgendaListView_ItemSelected">
+                    <ListView.ItemTemplate>
+                         <DataTemplate>
+                           <ViewCell>
+                               
+                            <Grid>
+                             <Grid.RowDefinitions>
+                                <RowDefinition Height="65"/>
+                                <RowDefinition Height="*"/>
+                              </Grid.RowDefinitions>  
+                                        
+                            <Grid.ColumnDefinitions>
+                               <ColumnDefinition Width="0"/>
+                               <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        
+                            <Label Text="{Binding Day}"
+                                   TextColor="White"
+                                   FontAttributes="Bold"
+                                   FontSize="20"
+                                   Grid.Row="0"
+                                   Grid.Column="1"
+                                   BackgroundColor="#284669"
+                                   HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"/>
+                                        
+                           </Grid>
+      
+                       </ViewCell>
+                    </DataTemplate>         
+                   </ListView.ItemTemplate>                             
+                 </ListView> 
+               
                 
             </StackLayout>
             
