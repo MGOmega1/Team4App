@@ -31,7 +31,7 @@ namespace TeamApp1
 
         private void HoursButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SubmitHoursPage());
+          //  Navigation.PushAsync(new SubmitHoursPage());
         }
     }
 }
