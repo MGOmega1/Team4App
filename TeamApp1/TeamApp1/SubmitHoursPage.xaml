@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TeamApp1.SubmitHoursPage"
+             Title="Submit Hours">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightGray" Spacing="10">
+
+                <StackLayout BackgroundColor="#74A4DD">
+                    <Label Text="App Name"
+                    TextColor="Black"
+                    FontSize="30"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            
+                <StackLayout BackgroundColor="Gray">
+
+                <Label Text="Submit Hours:"
+                       FontSize="30"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       WidthRequest="300"
+                       HeightRequest="70"/>
+                </StackLayout>
+
+
+            <ScrollView>
+                <StackLayout Padding="5">
+                <Label Text="Monday"
+                       FontSize="20"
+                       Style="Bold"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Start"/>
+                <Entry x:Name="mondayEntry"
+                   Placeholder="Hour(s)"/>
+                    
+                <Label Text="Tuesday"
+                       FontSize="20"
+                       Style="Bold"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Start"/>
+                <Entry x:Name="tuesdayEntry"
+                       Placeholder="Hour(s)"/>
+                    
+                <Label Text="Wednesday"
+                       FontSize="20"
+                       Style="Bold"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Start"/>
+                <Entry x:Name="wednesdayEntry"
+                   Placeholder="Hour(s)"/>
+
+                <Label Text="Thursday"
+                       FontSize="20"
+                       Style="Bold"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Start"/>
+                <Entry x:Name="thursdayEntry"
+                   Placeholder="Hour(s)"/>
+
+                <Label Text="Friday"
+                       FontSize="20"
+                       Style="Bold"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Start"/>
+            <Entry x:Name="fridayEntry"
+                   Placeholder="Hour(s)"/>
+            
+            <Button Text="Submit Hours"
+                       FontSize="24"
+                    BackgroundColor="#284669"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"
+                       WidthRequest="300"
+                       HeightRequest="50 "
+                       Clicked="Button_OnClicked"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
