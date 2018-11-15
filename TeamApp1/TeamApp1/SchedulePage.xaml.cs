@@ -33,7 +33,9 @@ namespace TeamApp1
             }
             Schedule selectedSchedule = e.SelectedItem as Schedule;
             (sender as ListView).SelectedItem = null;
-            DisplayAlert("Hello Worker", "Here is your schedule for " + selectedSchedule.weekDay, " Shift: " + selectedSchedule.workShift + " Detail: " + selectedSchedule.workDetail + " Work to be completed by: " + selectedSchedule.workCompletionDate, "ok");
+            //DisplayAlert("Hello Worker", "Here is your schedule for " + selectedSchedule.weekDay, " Shift: " + selectedSchedule.workShift + " Detail: " + selectedSchedule.workDetail + " Work to be completed by: " + selectedSchedule.workCompletionDate, "ok");
+
+            Navigation.PushAsync(new ScheduleDetailPage(selectedSchedule));
         }
     }
     public class Schedule

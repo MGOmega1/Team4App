@@ -4,7 +4,7 @@
              x:Class="TeamApp1.SchedulePage"
              Title="Work Schedule">
     <ContentPage.Content>
-        <ScrollView>
+        
         <StackLayout BackgroundColor="LightGray" Spacing="40">
             <StackLayout BackgroundColor="#74A4DD">
                 <Label
@@ -16,18 +16,19 @@
                     VerticalOptions="CenterAndExpand"
                 />
             </StackLayout>
-            <StackLayout BackgroundColor="#74A4DD">
+            <StackLayout BackgroundColor="DimGray">
                 <Label
-                    Text="My Current Schedule:"
+                    Text=" My Current Schedule:"
+                    TextColor="#74A4DD"
                     HorizontalTextAlignment="Start"
                     FontSize="20"
                 />
-
-                <ListView x:Name="scheduleListView" ItemSelected="scheduleListView_ItemSelected" HasUnevenRows="True">
+                 
+                <ListView BackgroundColor="DimGray" x:Name="scheduleListView" ItemSelected="scheduleListView_ItemSelected" HasUnevenRows="True" HeightRequest="9999">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <Grid BackgroundColor="#DDDDD">
+                                <Grid>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="*"/>
                                     </Grid.RowDefinitions>
@@ -54,8 +55,8 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-            </StackLayout>
+           </StackLayout>
         </StackLayout>
-     </ScrollView>
+    
     </ContentPage.Content>
 </ContentPage>
