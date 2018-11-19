@@ -34,6 +34,7 @@
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"/>
                 <Entry x:Name="mondayEntry"
+                       Keyboard="Numeric"
                    Placeholder="Hour(s)"/>
                     
                 <Label Text="Tuesday"
@@ -42,6 +43,7 @@
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"/>
                 <Entry x:Name="tuesdayEntry"
+                       Keyboard="Numeric"
                        Placeholder="Hour(s)"/>
                     
                 <Label Text="Wednesday"
@@ -50,6 +52,7 @@
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"/>
                 <Entry x:Name="wednesdayEntry"
+                       Keyboard="Numeric"
                    Placeholder="Hour(s)"/>
 
                 <Label Text="Thursday"
@@ -58,6 +61,7 @@
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"/>
                 <Entry x:Name="thursdayEntry"
+                       Keyboard="Numeric"
                    Placeholder="Hour(s)"/>
 
                 <Label Text="Friday"
@@ -66,6 +70,7 @@
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"/>
             <Entry x:Name="fridayEntry"
+                   Keyboard="Numeric"
                    Placeholder="Hour(s)"/>
             
             <Button Text="Submit Hours"

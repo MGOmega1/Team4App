@@ -14,21 +14,21 @@ namespace TeamApp1
     public partial class PastHoursPage : ContentPage
     {
         public ObservableCollection<Hour> Hours { get; set; }
-        public PastHoursPage()
+        public PastHoursPage(string Monday, string Tuesday, string Wednesday, string Thursday, string Friday)
         {
             InitializeComponent();
 
             this.Hours = new ObservableCollection<Hour>();
             this.Hours.Add(new Hour
-            { Days = "Monday: ", Hours = 8 });
+            { Days = "Monday: ", Hours = Convert.ToDecimal(Monday) });
             this.Hours.Add(new Hour
-            { Days = "Tuesday: ", Hours = 7.5m });
+            { Days = "Tuesday: ", Hours = Convert.ToDecimal(Tuesday) });
             this.Hours.Add(new Hour
-            { Days = "Wednesday: ", Hours = 8.5m });
+            { Days = "Wednesday: ", Hours = Convert.ToDecimal(Wednesday) });
             this.Hours.Add(new Hour
-            { Days = "Thursday: ", Hours = 8 });
+            { Days = "Thursday: ", Hours = Convert.ToDecimal(Thursday) });
             this.Hours.Add(new Hour
-            { Days = "Friday: ", Hours = 8 });
+            { Days = "Friday: ", Hours = Convert.ToDecimal(Friday) });
 
             hoursListView.ItemsSource = this.Hours;
 
