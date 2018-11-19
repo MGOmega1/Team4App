@@ -4,12 +4,22 @@
              x:Class="TeamApp1.ScheduleDetailPage">
     <ContentPage.Content>
         <StackLayout BackgroundColor="LightGray" Padding="20" Spacing="10">
-            
-            <Label x:Name="weekdayLabel"/>
-            <Label x:Name="workshiftLabel"/>
-            <Label x:Name="workDetailLabel"/>
-            <Label x:Name="workCompletionLabel"/>
-
+            <StackLayout>
+                <Label Text="Day of the week: " TextColor="Black" FontSize="20"/>
+                <Label x:Name="weekdayLabel"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Shift Time: " TextColor="Black" FontSize="20"/>
+                <Label x:Name="workshiftLabel"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Work Detail: " TextColor="Black" FontSize="20"/>
+                <Label x:Name="workDetailLabel"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Date To Be Completed: " TextColor="Black" FontSize="20"/>
+                <Label x:Name="workCompletionLabel"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
