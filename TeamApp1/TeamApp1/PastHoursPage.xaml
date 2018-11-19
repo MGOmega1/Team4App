@@ -65,6 +65,15 @@
                        HeightRequest="50 "
                        Clicked="Button_OnClicked"/>
 
+            <Button Text="Clear"
+                       FontSize="24"
+                    BackgroundColor="Gray"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"
+                       WidthRequest="300"
+                       HeightRequest="50 "
+                       Clicked="Button_OnClicked"/>
+
         </StackLayout>
 
     </ContentPage.Content>

@@ -19,7 +19,8 @@ namespace TeamApp1
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new PastHoursPage());
+
+            Navigation.PushAsync(new PastHoursPage(mondayEntry.Text, tuesdayEntry.Text, wednesdayEntry.Text, thursdayEntry.Text, fridayEntry.Text));
         }
     }
 }
