@@ -8,33 +8,50 @@
         <StackLayout BackgroundColor="#EDEDED" Spacing="20">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="30"/>
-                    <ColumnDefinition Width="30"/>
-                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="140"/>
                 </Grid.ColumnDefinitions>
-                <Image
+                
+                    <Image Margin="20,45,0,0"
                     x:Name="cellphoneicon"
                     Source="cellphoneicon.png"
                     BackgroundColor="#284669"
-                    WidthRequest="30"
-                    HeightRequest="30"
-                    Grid.Row="1"
-                    Grid.Column="1"
+                    WidthRequest="90"
+                    HeightRequest="90"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Grid.RowSpan="2"
                     HorizontalOptions="Start"
                     VerticalOptions="Start"
                     />
+                
+                <Image
+                    Margin="0,10,0,0"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    HorizontalOptions="Center"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    BackgroundColor="DimGray"
+                    />
+
                 <Label Text="Company Name"
                    TextColor="#284669"
-                   FontAttributes="Bold"
+                   FontAttributes="Italic"
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="Center"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
-                   FontSize="22"
+                   FontSize="32"
                     Grid.Row="1"
-                    Grid.Column="1"
-                    Grid.ColumnSpan="3"
+                    Grid.Column="2"
+                    
                    />
                 
             </Grid>
