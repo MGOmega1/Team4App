@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TeamApp1.ContactPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="Gray"
+                     Padding="5"
+                     Spacing="85">
+            
+            <Label Text="Contact Form"
+                   FontSize="40"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="#74A4DD"
+                   TextColor="White"/>
+            
+          <Entry Placeholder="Name"
+                 x:Name="NameEntry"/>
+                
+           <Entry Placeholder="E-mail"
+                  x:Name="EmailEntry"/>
+                
+           <Entry Placeholder="Department"
+                  x:Name="DepartmentEntry"/>
+                
+            <Editor HeightRequest="80"
+                    Placeholder="Message"
+                    x:Name="MessageEntry"></Editor>
+            
+            <Button Text="Submit"
+                    BackgroundColor="#284669"
+                    TextColor="White"
+                    x:Name="Submit"
+                    Clicked="Handle_Clicked"/>
+        </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

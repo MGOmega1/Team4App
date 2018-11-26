@@ -26,35 +26,48 @@
                        HeightRequest="70
                        "/>
             </StackLayout>
+            <StackLayout
+                Padding="10">
 
-            <ListView x:Name="hoursListView"
+                <ListView x:Name="hoursListView"
                           HasUnevenRows="True"
                           SeparatorVisibility="Default"
                           SeparatorColor="Black">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout>
-                                <Label Text="{Binding Days}"  
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label Text="{Binding Days}"  
                                        FontSize="24"
                                        FontAttributes="Bold"
                                        TextColor="Black"/>
-                                <Label Text="{Binding Hours}"  
+                                    <Label Text="{Binding Hours}"  
                                        FontSize="20"
                                        FontAttributes="Bold"
                                        TextColor="Black"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Label x:Name="totalHours"
-                   WidthRequest="300"
-                   Style="Bold"
-                   Text="Total"
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Label
+                Text="Total Hours:"
+                WidthRequest="300"
+                   FontAttributes="Bold"
+                   FontSize="22"          
                    HeightRequest="50"
                    VerticalOptions="StartAndExpand"
-                   HorizontalOptions="Center"/>
+                   HorizontalOptions="Start"/>
+
+                <Label x:Name="totalHours"
+                   WidthRequest="300"
+                   FontAttributes="Bold"
+                   FontSize="20"          
+                   HeightRequest="50"
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="Start"/>
+            </StackLayout>
 
             <Button Text="Approve Hours"
                        FontSize="24"

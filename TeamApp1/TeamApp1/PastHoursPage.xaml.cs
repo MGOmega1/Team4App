@@ -47,6 +47,7 @@ namespace TeamApp1
         private void Button_OnClicked(object sender, EventArgs e)
         {
             DisplayAlert("Success!", "Thank you for approving your time", "Ok");
+            Navigation.PushAsync(new MainPage());
         }
     }
 }
