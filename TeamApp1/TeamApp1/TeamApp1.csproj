@@ -11,6 +11,8 @@
   <ItemGroup>
     <Compile Remove="AgendaPage1.cs" />
     <Compile Remove="AgendaPage.xaml.cs" />
+    <Compile Remove="ContactForm.cs" />
+    <Compile Remove="NewsPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="SubmitHoursPage.xaml.cs">
@@ -23,15 +25,13 @@
 
   <ItemGroup>
     <EmbeddedResource Remove="AgendaPage.xaml" />
+    <EmbeddedResource Remove="NewsPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="SubmitHoursPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="PastHoursPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="NewsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ProfilePage.xaml">

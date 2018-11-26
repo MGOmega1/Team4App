@@ -100,8 +100,6 @@
                 BackgroundColor="DimGray"
                 TextColor="White"
                 FontSize="22"
-                    x:Name="NewsButton"
-                    Clicked="NewsButton_Clicked"
                 />
             </StackLayout>
             <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
