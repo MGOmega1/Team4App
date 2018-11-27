@@ -16,7 +16,7 @@ namespace TeamApp1
 
         private void MeetingsButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AgendaPage1());
+            Navigation.PushAsync(new MainPage());
         }
 
         private void ScheduleButton_Clicked(object sender, EventArgs e)
