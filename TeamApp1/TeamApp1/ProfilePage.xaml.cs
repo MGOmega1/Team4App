@@ -16,5 +16,10 @@ namespace TeamApp1
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void ProfileListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+        }
+    }
 }
