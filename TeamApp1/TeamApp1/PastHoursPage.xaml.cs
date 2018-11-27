@@ -44,10 +44,16 @@ namespace TeamApp1
             public string Days { get; set; }
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+        private void ApproveButton_OnClicked(object sender, EventArgs e)
         {
             DisplayAlert("Success!", "Thank you for approving your time", "Ok");
             Navigation.PushAsync(new MainPage());
+        }
+
+        private void BackButton_OnClicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Success!", "You can now re-enter your hours", "Ok");
+            Navigation.PopAsync();
         }
     }
 }

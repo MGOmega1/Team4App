@@ -55,7 +55,7 @@
                 Text="Total Hours:"
                 WidthRequest="300"
                    FontAttributes="Bold"
-                   FontSize="22"          
+                   FontSize="18"          
                    HeightRequest="50"
                    VerticalOptions="StartAndExpand"
                    HorizontalOptions="Start"/>
@@ -63,29 +63,31 @@
                 <Label x:Name="totalHours"
                    WidthRequest="300"
                    FontAttributes="Bold"
-                   FontSize="20"          
+                   FontSize="18"          
                    HeightRequest="50"
                    VerticalOptions="StartAndExpand"
                    HorizontalOptions="Start"/>
             </StackLayout>
 
-            <Button Text="Approve Hours"
+            <Button
+                       Text="Approve Hours"
                        FontSize="24"
-                    BackgroundColor="#284669"
+                       BackgroundColor="#284669"
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="Center"
                        WidthRequest="300"
                        HeightRequest="50 "
-                       Clicked="Button_OnClicked"/>
+                       Clicked="ApproveButton_OnClicked"/>
 
-            <Button Text="Clear"
+            <Button
+                       Text="Re-Enter Hours"
                        FontSize="24"
-                    BackgroundColor="Gray"
+                       BackgroundColor="Gray"
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="Center"
                        WidthRequest="300"
                        HeightRequest="50 "
-                       Clicked="Button_OnClicked"/>
+                       Clicked="BackButton_OnClicked"/>
 
         </StackLayout>
 

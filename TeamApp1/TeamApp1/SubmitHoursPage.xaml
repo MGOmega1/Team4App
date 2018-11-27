@@ -16,7 +16,7 @@
                 </StackLayout>
             
                 <StackLayout BackgroundColor="Gray">
-
+             
                 <Label Text="Submit Hours:"
                        FontSize="30"
                        HorizontalTextAlignment="Center"
@@ -28,51 +28,52 @@
 
             <ScrollView>
                 <StackLayout Padding="5">
-                <Label Text="Monday"
+                    <Label Text="Monday"
                        FontSize="20"
                        Style="Bold"
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"/>
-                <Entry x:Name="mondayEntry"
+                    <Entry x:Name="mondayEntry"
                        Keyboard="Numeric"
                    Placeholder="Hour(s)"/>
-                    
-                <Label Text="Tuesday"
+
+                    <Label Text="Tuesday"
                        FontSize="20"
                        Style="Bold"
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"/>
-                <Entry x:Name="tuesdayEntry"
+                    <Entry x:Name="tuesdayEntry"
                        Keyboard="Numeric"
                        Placeholder="Hour(s)"/>
-                    
-                <Label Text="Wednesday"
+
+                    <Label Text="Wednesday"
                        FontSize="20"
                        Style="Bold"
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"/>
-                <Entry x:Name="wednesdayEntry"
+                    <Entry x:Name="wednesdayEntry"
                        Keyboard="Numeric"
                    Placeholder="Hour(s)"/>
 
-                <Label Text="Thursday"
+                    <Label Text="Thursday"
                        FontSize="20"
                        Style="Bold"
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"/>
-                <Entry x:Name="thursdayEntry"
+                    <Entry x:Name="thursdayEntry"
                        Keyboard="Numeric"
                    Placeholder="Hour(s)"/>
 
-                <Label Text="Friday"
+                    <Label Text="Friday"
                        FontSize="20"
                        Style="Bold"
                        HorizontalTextAlignment="Start"
                        VerticalTextAlignment="Start"/>
-            <Entry x:Name="fridayEntry"
+                    <Entry x:Name="fridayEntry"
                    Keyboard="Numeric"
                    Placeholder="Hour(s)"/>
-            
+                </StackLayout>
+            </ScrollView>
             <Button Text="Submit Hours"
                        FontSize="24"
                     BackgroundColor="#284669"
@@ -81,8 +82,8 @@
                        WidthRequest="300"
                        HeightRequest="50 "
                        Clicked="Button_OnClicked"/>
-                </StackLayout>
-            </ScrollView>
+               
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
