@@ -13,6 +13,8 @@
     <Compile Remove="AgendaPage.xaml.cs" />
     <Compile Remove="ContactForm.cs" />
     <Compile Remove="NewsPage.xaml.cs" />
+    <Compile Remove="AgendaPage1.cs" />
+    <Compile Remove="AgendaPage1.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="SubmitHoursPage.xaml.cs">
