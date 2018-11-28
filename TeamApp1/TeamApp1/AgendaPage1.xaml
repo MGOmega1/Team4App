@@ -20,10 +20,12 @@
             
             <StackLayout BackgroundColor="LightGray"
                          Spacing="30"
-                         Padding="17">
+                         Padding="17"
+                         >
                       
-                <StackLayout Spacing="25"
-                             BackgroundColor="Gray">
+                <StackLayout Spacing="22"
+                             BackgroundColor="Gray"
+                             HeightRequest="400">
                         
                  <Label Text="WeekDay"
                        x:Name="Day"
@@ -62,7 +64,8 @@
                 
                         
                        <StackLayout BackgroundColor="Gray"
-                                    Spacing="30"> 
+                                    Spacing="30"
+                                    HeightRequest="350"> 
                  <Label Text="News"
                         FontSize="35"
                         HorizontalTextAlignment="Center"
