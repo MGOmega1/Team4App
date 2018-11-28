@@ -60,7 +60,7 @@
 
             </Grid>
                 <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
-                <Image x:Name="profileicon1"
+                <Image x:Name="profileicon"
                        Source="profile.png"
                        WidthRequest="50"
                        HeightRequest="50"
