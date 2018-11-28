@@ -16,7 +16,7 @@ namespace TeamApp1
 
         private void MeetingsButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MainPage());
+            Navigation.PushAsync(new AgendaPage1());
         }
 
         private void ScheduleButton_Clicked(object sender, EventArgs e)
@@ -27,6 +27,11 @@ namespace TeamApp1
         private void HoursButton_Clicked(object sender, EventArgs e)
         {
            Navigation.PushAsync(new SubmitHoursPage());
+        }
+
+        private void ProfileButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ProfilePage());
         }
     }
 }

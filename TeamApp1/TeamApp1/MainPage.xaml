@@ -60,7 +60,7 @@
 
             </Grid>
                 <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
-                <Image x:Name="profileicon"
+                <Image x:Name="profileicontop"
                        Source="profile.png"
                        WidthRequest="50"
                        HeightRequest="50"
@@ -72,6 +72,7 @@
                 TextColor="White"
                 FontSize="22"   
                     x:Name="ProfileButton"
+                    Clicked="ProfileButton_Clicked"
                 />
             </StackLayout>
             <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
