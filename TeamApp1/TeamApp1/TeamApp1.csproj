@@ -15,6 +15,7 @@
     <Compile Remove="NewsPage.xaml.cs" />
     <Compile Remove="AgendaPage1.cs" />
     <Compile Remove="AgendaPage1.cs" />
+    <Compile Remove="AgendaPage1.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="SubmitHoursPage.xaml.cs">
@@ -28,6 +29,8 @@
   <ItemGroup>
     <EmbeddedResource Remove="AgendaPage.xaml" />
     <EmbeddedResource Remove="NewsPage.xaml" />
+    <EmbeddedResource Remove="AgendaPage1.xaml" />
+    <EmbeddedResource Remove="AgendaPage1.xaml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="SubmitHoursPage.xaml">

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TeamApp1.AgendaPage2">
+    <ContentPage.Content>
+        <ScrollView> 
+        
+        <StackLayout BackgroundColor="LightGray" Spacing="40">
+            
+            <StackLayout BackgroundColor="#74A4DD">
+                <Label Text="App Name"
+                    TextColor="Black"
+                    FontSize="30"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                      />
+                </StackLayout>
+                
+ 
+            
+            <StackLayout BackgroundColor="LightGray"
+                         Spacing="30"
+                         Padding="17"
+                         >
+                      
+                <StackLayout Spacing="22"
+                             BackgroundColor="Gray"
+                             HeightRequest="400">
+                        
+                 <Label Text="WeekDay"
+                       x:Name="Day"
+                       FontSize="45"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"/>
+                        
+                 <BoxView BackgroundColor="Black"
+                         HorizontalOptions="FillAndExpand"
+                         HeightRequest="2"
+                          Margin="30,0,30,0"/>
+                        
+                 <Label Text="Agenda"
+                        FontSize="35"
+                        HorizontalTextAlignment="Center"
+                        TextColor="#284669"/>     
+                    
+                <Label Text="Placeholder"
+                       FontSize="20"
+                       x:Name="Line1"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="Placeholder"
+                       FontSize="20"
+                       x:Name="Line2"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"/>
+                    <Label Text="Placeholder"
+                       FontSize="20"
+                       x:Name="Line3"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"/>
+                           
+                            
+                    </StackLayout>
+                
+                        
+                       <StackLayout BackgroundColor="Gray"
+                                    Spacing="30"
+                                    HeightRequest="350"> 
+                 <Label Text="News"
+                        FontSize="35"
+                        HorizontalTextAlignment="Center"
+                        Margin="0,15,0,0"
+                        TextColor="#284669"/>
+                 <BoxView BackgroundColor="Black"
+                         HorizontalOptions="FillAndExpand"
+                         HeightRequest="2"
+                          Margin="30,0,30,0"/>
+                 <Label Text="Placeholder"
+                       FontSize="20"
+                       x:Name="Line4"
+                       TextColor="White"
+                       Margin="25,0,0,0"/>
+                  <Label Text="Placeholder"
+                       FontSize="20"
+                       x:Name="Line5"
+                       TextColor="White"
+                       Margin="25,0,0,0"/>
+                 
+                </StackLayout>            
+                            
+                
+                    
+                <Button Text="Contact Office"
+                        BackgroundColor="#284669"
+                        TextColor="White"
+                        HeightRequest="40"
+                        Margin="30,25,30,0"
+                        Clicked="Handle_Clicked"/>
+            </StackLayout>
+            
+                </StackLayout>
+                
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -11,7 +11,7 @@ namespace TeamApp1
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new AgendaPage1());
+            MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()
