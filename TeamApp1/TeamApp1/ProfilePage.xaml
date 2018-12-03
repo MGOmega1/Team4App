@@ -16,64 +16,70 @@
                 />
             </StackLayout>
             <Frame CornerRadius="70" BorderColor="#74A4DD" BackgroundColor="DimGray">
-                <Image Source="{Binding employeePhoto}" />
+                <Image x:Name="profilePicture" />
             </Frame>
-            <ListView x:Name="ProfileListView" ItemSelected="ProfileListView_ItemSelected">
+            <ListView x:Name="ProfileListView" ItemSelected="ProfileListView_ItemSelected"
+                      HasUnevenRows="True">
                 <ListView.ItemTemplate>
-                <DataTemplate>
-                <StackLayout BackgroundColor="DimGray">
-                <Label
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <StackLayout BackgroundColor="DimGray">
+                                <Label
                     Text="{Binding employeeName}"
                     TextColor="Black"
                     FontSize="20"
                     HorizontalTextAlignment="Start"
                     
                 />
-                <BoxView
+                                <BoxView
                     BackgroundColor="Black"
                     HorizontalOptions="FillAndExpand"
                     HeightRequest="2"
                     Margin="0,0,0,0"
                     
                 />
-                <Label
+                                <Label
                     Text="{Binding employeeDepartment}"
                     TextColor="Black"
                     FontSize="20"
                     HorizontalTextAlignment="Start"
                     
                 />
-                <BoxView
+                                <BoxView
                     BackgroundColor="Black"
                     HorizontalOptions="FillAndExpand"
                     HeightRequest="2"
                     Margin="0,0,0,0"
                     
                 />
-                <Label
+                                <Label
                     Text="My Schedule"
                     TextColor="Black"
                     FontSize="20"
                     HorizontalTextAlignment="Start"
                     
                 />
-                <BoxView
+                                <BoxView
                     BackgroundColor="Black"
                     HorizontalOptions="FillAndExpand"
                     HeightRequest="2"
                     Margin="0,0,0,0"
                 />
-                <Label
+                                <Label
                     Text="{Binding employeeID}"
                     TextColor="Black"
                     FontSize="20"
                     HorizontalTextAlignment="Start"
                     
                 />
-            </StackLayout>
-         </DataTemplate>
-       </ListView.ItemTemplate>
-     </ListView>
-    </StackLayout>
-  </ContentPage.Content>
+                            </StackLayout>
+                        </ViewCell>
+
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

@@ -16,6 +16,8 @@ namespace TeamApp1
         public ProfilePage()
 		{
 			InitializeComponent ();
+            profilePicture.Source = "profile.png";
+
             this.employeeProfile = new ObservableCollection<Profile>();
             this.employeeProfile.Add(new Profile { employeeName = "This Guy", employeeDepartment="That Department", employeeID = "0123456" });
             this.ProfileListView.ItemsSource = this.employeeProfile;
