@@ -60,6 +60,11 @@
 
             </Grid>
                 <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Tapped="ProfileButton_Clicked">    
+                    </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
                 <Image x:Name="profileicontop"
                        Source="profile.png"
                        WidthRequest="50"
@@ -76,6 +81,11 @@
                 />
             </StackLayout>
             <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
+               <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Tapped="MeetingsButton_Clicked">    
+                    </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
                 <Image x:Name="meetingsicon"
                        Source="meetingsicon.png"
                        WidthRequest="50"
@@ -92,6 +102,11 @@
                 />
             </StackLayout>
             <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Tapped="ScheduleButton_Clicked">    
+                    </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
                 <Image x:Name="peopleicon"
                        Source="peopleicon.png"
                        WidthRequest="50"
@@ -108,6 +123,11 @@
                 />
             </StackLayout>
             <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
+               <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Tapped="HoursButton_Clicked">    
+                    </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
                 <Image x:Name="hoursicon"
                        Source="hoursicon.gif"
                        WidthRequest="50"
