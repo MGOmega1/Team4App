@@ -23,7 +23,7 @@
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"
                        WidthRequest="300"
-                       HeightRequest="70
+                       HeightRequest="80
                        "/>
             </StackLayout>
             <StackLayout
@@ -76,7 +76,7 @@
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="Center"
                        WidthRequest="300"
-                       HeightRequest="50 "
+                       HeightRequest="80 "
                        Clicked="ApproveButton_OnClicked"/>
 
             <Button
@@ -86,7 +86,7 @@
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="Center"
                        WidthRequest="300"
-                       HeightRequest="50 "
+                       HeightRequest="80 "
                        Clicked="BackButton_OnClicked"/>
 
         </StackLayout>

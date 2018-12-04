@@ -80,7 +80,7 @@
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="Center"
                        WidthRequest="300"
-                       HeightRequest="50 "
+                       HeightRequest="80 "
                        Clicked="Button_OnClicked"/>
                
             
