@@ -15,65 +15,42 @@
                     VerticalOptions="CenterAndExpand"
                 />
             </StackLayout>
-            <Frame CornerRadius="70" BorderColor="#74A4DD" BackgroundColor="DimGray">
-                <Image Source="{Binding employeePhoto}" />
+            <Frame CornerRadius="70" Margin="120,18,120,0" BorderColor="#74A4DD" BackgroundColor="DimGray">
+                <Image x:Name="employeePhoto"  />
             </Frame>
-            <ListView x:Name="ProfileListView" ItemSelected="ProfileListView_ItemSelected">
-                <ListView.ItemTemplate>
-                <DataTemplate>
-                <StackLayout BackgroundColor="DimGray">
+            <StackLayout BackgroundColor="DimGray" Margin="10">
                 <Label
-                    Text="{Binding employeeName}"
-                    TextColor="Black"
-                    FontSize="20"
+                    x:Name="employeeName"
+                    TextColor="white"
                     HorizontalTextAlignment="Start"
-                    
+                    FontSize="15"
                 />
-                <BoxView
-                    BackgroundColor="Black"
-                    HorizontalOptions="FillAndExpand"
-                    HeightRequest="2"
-                    Margin="0,0,0,0"
-                    
-                />
+                <BoxView BackgroundColor="Black"
+                         HorizontalOptions="FillAndExpand"
+                         HeightRequest="2"
+                         Margin="30,0,30,0"/>
                 <Label
-                    Text="{Binding employeeDepartment}"
-                    TextColor="Black"
-                    FontSize="20"
+                    x:Name="employeeDepartment"
+                    TextColor="white"
                     HorizontalTextAlignment="Start"
-                    
+                    FontSize="15"
                 />
-                <BoxView
-                    BackgroundColor="Black"
-                    HorizontalOptions="FillAndExpand"
-                    HeightRequest="2"
-                    Margin="0,0,0,0"
-                    
-                />
+                <BoxView BackgroundColor="Black"
+                         HorizontalOptions="FillAndExpand"
+                         HeightRequest="2"
+                         Margin="30,0,30,0"/>
                 <Label
-                    Text="My Schedule"
-                    TextColor="Black"
-                    FontSize="20"
+                    x:Name="employeeID"
+                    TextColor="white"
                     HorizontalTextAlignment="Start"
-                    
+                    FontSize="15"
                 />
-                <BoxView
-                    BackgroundColor="Black"
-                    HorizontalOptions="FillAndExpand"
-                    HeightRequest="2"
-                    Margin="0,0,0,0"
-                />
-                <Label
-                    Text="{Binding employeeID}"
-                    TextColor="Black"
-                    FontSize="20"
-                    HorizontalTextAlignment="Start"
-                    
-                />
+                <BoxView BackgroundColor="Black"
+                         HorizontalOptions="FillAndExpand"
+                         HeightRequest="2"
+                         Margin="30,0,30,0"/>
+
             </StackLayout>
-         </DataTemplate>
-       </ListView.ItemTemplate>
-     </ListView>
-    </StackLayout>
-  </ContentPage.Content>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

@@ -2993,11 +2993,11 @@ namespace TeamApp1.Droid
 			// aapt resource value: 0x7f02012c
 			public const int notification_icon_background = 2130837804;
 			
-			// aapt resource value: 0x7f020134
-			public const int notification_template_icon_bg = 2130837812;
-			
 			// aapt resource value: 0x7f020135
-			public const int notification_template_icon_low_bg = 2130837813;
+			public const int notification_template_icon_bg = 2130837813;
+			
+			// aapt resource value: 0x7f020136
+			public const int notification_template_icon_low_bg = 2130837814;
 			
 			// aapt resource value: 0x7f02012d
 			public const int notification_tile_bg = 2130837805;
@@ -3012,13 +3012,16 @@ namespace TeamApp1.Droid
 			public const int peopleicon = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int profile = 2130837809;
+			public const int person = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int tooltip_frame_dark = 2130837810;
+			public const int profile = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int tooltip_frame_light = 2130837811;
+			public const int tooltip_frame_dark = 2130837811;
+			
+			// aapt resource value: 0x7f020134
+			public const int tooltip_frame_light = 2130837812;
 			
 			static Drawable()
 			{
