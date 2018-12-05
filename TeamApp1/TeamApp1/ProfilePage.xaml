@@ -7,7 +7,7 @@
         <StackLayout BackgroundColor="LightGray" Spacing="20">
             <StackLayout BackgroundColor="#74A4DD">
                 <Label
-                    Text="App Name"
+                    Text="WayPoint"
                     TextColor="Black"
                     FontSize="30"
                     HorizontalTextAlignment="Center"
@@ -51,6 +51,18 @@
                          Margin="30,0,30,0"/>
 
             </StackLayout>
+            <Frame BackgroundColor="DimGray" CornerRadius="70" Margin="15" WidthRequest="400">
+                <Button
+                    BackgroundColor="DimGray"
+                    Text="My Schedule"
+                    TextColor="White"
+                    HorizontalOptions="CenterAndExpand"
+                    HeightRequest="40"
+                    WidthRequest="400"
+                    x:Name="scheduleButton"
+                    Clicked="scheduleButton_Clicked"
+                />
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

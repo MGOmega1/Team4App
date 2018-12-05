@@ -45,7 +45,7 @@
                     
                     />
                 </Frame>
-                <Label Text="Company Name"
+                <Label Text="WayPoint"
                    TextColor="#284669"
                    FontAttributes="Italic"
                    VerticalTextAlignment="Start"

@@ -6,7 +6,7 @@
         <StackLayout BackgroundColor="LightGray" Spacing="40">
             
             <StackLayout BackgroundColor="#74A4DD">
-                <Label Text="App Name"
+                    <Label Text="WayPoint"
                     TextColor="Black"
                     FontSize="30"
                     HorizontalTextAlignment="Center"

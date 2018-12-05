@@ -23,6 +23,9 @@ namespace TeamApp1
 
         }
 
-
+        private void scheduleButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SchedulePage());
+        }
     }
 }

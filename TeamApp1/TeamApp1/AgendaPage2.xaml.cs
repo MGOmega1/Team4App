@@ -58,7 +58,7 @@ namespace TeamApp1
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            Navigation.PushAsync(new ContactPage());
         }
     }
 }
