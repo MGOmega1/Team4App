@@ -6,60 +6,11 @@
 
     <ScrollView>
         <StackLayout BackgroundColor="#EDEDED" Spacing="20">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="75"/>
-                    <RowDefinition Height="75"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="140"/>
-                </Grid.ColumnDefinitions>
-                <Frame Margin="25,45,25,0" CornerRadius="190" Grid.Row="0"
-                    Grid.Column="0" 
-                    Grid.ColumnSpan="2"
-                    Grid.RowSpan="2" BackgroundColor="#284669">
-                    <Image 
-                    x:Name="cellphoneicon"
-                    Source="cellphoneicon.png"
-                    WidthRequest="120"
-                    HeightRequest="120"
-                    Grid.RowSpan="3"
-                    Grid.ColumnSpan="3"
-                   HorizontalOptions="Start"
-                    VerticalOptions="Start"                   
-                    />
-                </Frame>
-                <Frame CornerRadius="170" 
-                    Margin="33,10,33,0"
-                    Grid.Row="0"
-                    Grid.Column="2"                        
-                    BackgroundColor="DimGray">
-                <Image
-                    x:Name="profileicon1"
-                    Source="profile.png"
-                    HorizontalOptions="Center"
-                    WidthRequest="60"
-                    HeightRequest="60"
-                    
-                    />
-                </Frame>
-                <Label Text="WayPoint"
-                   TextColor="#284669"
-                   FontAttributes="Italic"
-                   VerticalTextAlignment="Start"
-                   HorizontalTextAlignment="Center"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   FontSize="32"
-                    Grid.Row="1"
-                    Grid.Column="2"
-                    
+            <Image x:Name="BetterTop"
+                  Source="BetterTop.png"
+                   WidthRequest="300"
                    />
-
-            </Grid>
-                <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
+            <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer 
                         Tapped="ProfileButton_Clicked">    
