@@ -29,6 +29,8 @@
                     BackgroundColor="#284669"
                     TextColor="White"
                     CornerRadius="70"
+                    FontSize="24"
+                    HeightRequest="70"
                     Margin="50,0,50,0"
                     x:Name="Submit"
                     Clicked="Handle_Clicked"/>

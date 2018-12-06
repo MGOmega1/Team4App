@@ -89,7 +89,7 @@
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="Center"
                        WidthRequest="300"
-                       HeightRequest="80 "
+                       HeightRequest="70"
                        Clicked="Button_OnClicked"/>
               
             </StackLayout>

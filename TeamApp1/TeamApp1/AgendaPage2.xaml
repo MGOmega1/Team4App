@@ -92,8 +92,9 @@
                 <Button Text="Contact Office"
                         BackgroundColor="#284669"
                         TextColor="White"
+                        FontSize="24"
                         CornerRadius="70"
-                        HeightRequest="40"
+                        HeightRequest="70"
                         Margin="30,25,30,0"
                         Clicked="Handle_Clicked"/>
             </StackLayout>
