@@ -8,6 +8,7 @@
         <StackLayout BackgroundColor="#EDEDED" Spacing="20">
             <Image x:Name="BetterTop"
                   Source="BetterTop.png"
+                   BackgroundColor="White"
                    WidthRequest="300"
                    />
             <StackLayout Margin="20" Padding="10" BackgroundColor="DimGray" Orientation="Horizontal">
