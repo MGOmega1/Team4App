@@ -69,26 +69,44 @@
                    HorizontalOptions="Start"/>
             </StackLayout>
 
-            <Button
+            <StackLayout>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer
+                    Tapped="ApproveButton_OnClicked">
+                    </TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+                <Button
                        Text="Approve Hours"
+                    TextColor="White"
                        FontSize="24"
+                    CornerRadius="70"
                        BackgroundColor="#284669"
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="Center"
                        WidthRequest="300"
                        HeightRequest="80 "
                        Clicked="ApproveButton_OnClicked"/>
+            </StackLayout>
 
-            <Button
+            <StackLayout>
+
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer
+                    Tapped="BackButton_OnClicked">
+                    </TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+                <Button
                        Text="Re-Enter Hours"
                        FontSize="24"
+                    CornerRadius="70"
+                    TextColor="White" 
                        BackgroundColor="Gray"
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="Center"
                        WidthRequest="300"
                        HeightRequest="80 "
                        Clicked="BackButton_OnClicked"/>
-
+            </StackLayout>
         </StackLayout>
 
     </ContentPage.Content>

@@ -74,16 +74,26 @@
                    Placeholder="Hour(s)"/>
                 </StackLayout>
             </ScrollView>
-            <Button Text="Submit Hours"
+            <StackLayout>
+            <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer
+                    Tapped="Button_OnClicked">
+                    </TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+                
+                    <Button Text="Submit Hours"
                        FontSize="24"
-                    BackgroundColor="#284669"
+                           CornerRadius="70"
+                    BackgroundColor="DimGray"
+                        TextColor="White"
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="Center"
                        WidthRequest="300"
                        HeightRequest="80 "
                        Clicked="Button_OnClicked"/>
-               
-            
+              
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
